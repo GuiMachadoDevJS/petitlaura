@@ -1,0 +1,21 @@
+FOTOS DOS PRODUTOS (cards da seção "Nossos encantos")
+
+Coloque aqui uma foto por produto, com EXATAMENTE estes nomes (formato .webp):
+
+  01-polaroid.webp            Fotos estilo Polaroid
+  02-photocard.webp           Photocards
+  03-mini-album.webp          Mini álbuns sanfonados
+  04-kit-festa.webp           Mini kits de festa
+  05-livrinho-colorir.webp    Livrinhos de colorir
+  06-convite.webp             Convites
+  07-etiquetas.webp           Etiquetas escolares
+  08-planner.webp             Planners
+  09-bloco-notas.webp         Mini blocos de notas
+  10-agenda.webp              Agendas e mini agendas
+
+Recomendado: quadrada, 400 x 400 px, até uns 50 KB cada.
+O site mostra a foto em 76 x 76 px (e 2x em telas nítidas) e recorta no centro,
+então deixe o produto bem no meio da imagem.
+
+Se preferir .jpg ou .png, é só avisar para trocar a extensão no index.html.
+Enquanto a foto não existir, o card mostra um quadradinho rosa com coração.
