@@ -15,7 +15,8 @@ const CONFIG = {
   links: {
     instagram: "https://www.instagram.com/petitlaura.oficial",
     shopee: "https://shopee.com.br/petitlaura",
-    loja: "https://petitlaura.com.br", // loja oficial: catálogo completo (prontos + personalizáveis)
+    // Loja oficial (catálogo completo). Vazio = botões em "Em breve". Quando a loja abrir: "https://petitlaura.com.br"
+    loja: "",
   },
 
   // Parâmetros de origem, para saber no Shopee/loja quem veio da landing
@@ -77,9 +78,16 @@ const CONFIG = {
         el.querySelector(".badge")?.remove();
       }
     } else {
+      // Sem link ainda: o botão aparece como "Em breve" e avisa ao tocar
+      if (el.classList.contains("btn")) {
+        el.classList.add("btn--soon");
+        el.setAttribute("aria-disabled", "true");
+        const label = el.querySelector(".btn__label");
+        if (label && !label.querySelector(".badge")) label.insertAdjacentHTML("beforeend", '<span class="badge">Em breve</span>');
+      }
       el.addEventListener("click", (e) => {
         e.preventDefault();
-        toast(key === "loja" ? "Nossa loja chega em breve 💕" : "Link em breve 💕");
+        toast(key === "loja" ? "Nossa loja chega em breve 💕" : key === "whatsapp" ? "WhatsApp em breve 💕" : "Link em breve 💕");
       });
     }
   });
