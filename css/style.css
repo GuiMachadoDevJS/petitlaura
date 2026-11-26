@@ -244,6 +244,17 @@ h2 .script { font-size: 1.18em; }
   .card:hover .chev { transform: translateX(3px); }
 }
 
+.monte {
+  margin-top: 8px; margin-bottom: 18px; text-align: center; padding: 26px 22px; border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, #fff, var(--blush)); border: 1px solid var(--pink);
+}
+.monte__title { font-size: 2.2rem; line-height: 1.1; margin-bottom: 6px; }
+.monte__sub { color: var(--ink-soft); max-width: 38ch; margin: 0 auto 16px; }
+.monte__chips { list-style: none; padding: 0; margin: 0 0 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.monte__chips li { padding: 6px 14px; border-radius: 999px; background: #fff; border: 1px solid var(--pink); color: var(--wine); font-weight: 700; font-size: 0.88rem; }
+.monte__ex { color: var(--ink-soft); font-size: 0.92rem; max-width: 42ch; margin: 0 auto; }
+.monte__ex strong { color: var(--wine); }
+
 .custom {
   margin-top: 8px; text-align: center; padding: 28px 22px; border-radius: var(--radius-lg);
   background: #fff; border: 2px dashed var(--pink);

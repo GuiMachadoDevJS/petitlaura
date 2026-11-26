@@ -15,7 +15,7 @@ const CONFIG = {
   links: {
     instagram: "https://www.instagram.com/petitlaura.oficial",
     shopee: "https://shopee.com.br/petitlaura",
-    loja: "https://petitlaura.com.br", // loja oficial: personalizados sob medida
+    loja: "https://petitlaura.com.br", // loja oficial: catálogo completo (prontos + personalizáveis)
   },
 
   // Parâmetros de origem, para saber no Shopee/loja quem veio da landing
